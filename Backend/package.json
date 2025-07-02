@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aditya-Singh-16/Major-Project.git"
+    "url": "git+https://github.com/AnshikaSahu157/bookstore"
   },
-  "author": "Aditya",
+  "author": "Anshika",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aditya-Singh-16/Major-Project/issues"
+    "url": "https://github.com/AnshikaSahu157/bookstore/issues"
   },
-  "homepage": "https://github.com/Aditya-Singh-16/Major-Project#readme",
+  "homepage": "https://github.com/AnshikaSahu157/bookstore#readme",
   "dependencies": {
     "axios": "^1.8.4",
     "bcryptjs": "^3.0.2",

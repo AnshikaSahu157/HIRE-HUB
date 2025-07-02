@@ -24,8 +24,17 @@ export const signup = async(req, res) => {
             },
         });
     } catch (error) {
-        console.log("Error: " + error.message);
-        res.status(500).json({ message: "Internal server error" });
+        if (err.response) {
+            // Backend returned an error response (status code outside of 2xx)
+            console.error("Error response:", err.response.data);
+            alert("Error: " + err.response.data.message || "Unknown server error");
+          } else if (err.request) {
+            // Request was made but no response received
+            console.error("Error request:", err.request);
+          } else {
+            // Something else went wrong during request setup
+            console.error("Error message:", err.message);
+          }
     }
 };
 export const login = async(req, res) => {
