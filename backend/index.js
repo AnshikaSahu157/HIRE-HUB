@@ -20,7 +20,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOption={
-    origin:'http://localhost:5173',
+    origin:['http://localhost:5173',
+        'https://hire-ocpp5do45-anshikas-projects-98352f04.vercel.app/api/v1/user'
+    ],
     credentials:true,
 }
 app.use(cors(corsOption));
