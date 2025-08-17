@@ -30,6 +30,12 @@ app.use("/api/v1/user",userRoute);
 app.use("/api/v1/company",companyRoute);
 app.use("/api/v1/job",jobRoute);
 app.use("/api/v1/application",applicationRoute);
+app.get('/',(req,res)=>{
+    res.send({
+        activeStatus:true,
+        error:false,
+    })
+})
 /*"http://localhost:8000/api/v1/user/register"
 "http://localhost:8000/api/v1/user/login"
 "http://localhost:8000/api/v1/user/profile/update"*/
